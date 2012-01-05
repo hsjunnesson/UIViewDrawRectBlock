@@ -1,6 +1,6 @@
 # UIView+DrawRectBlock
 
-Tired of subclassing +UIView+ just to implement drawRect?
+Tired of subclassing UIView just to implement drawRect?
 
 This is a category on UIView to create an instance with a block for its drawRect.
 
