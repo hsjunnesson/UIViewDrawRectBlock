@@ -24,7 +24,7 @@
 //  SOFTWARE.
 
 
-#import "UIView+UIView_DrawRectBlock.h"
+#import "UIView+DrawRectBlock.h"
 
 
 #pragma mark An internal wrapper class
