@@ -47,7 +47,7 @@
 
 - (void)drawRect:(CGRect)rect {
   if (drawRectBlock_)
-    drawRectBlock_(rect);
+    drawRectBlock_(rect, self);
 }
 
 @end

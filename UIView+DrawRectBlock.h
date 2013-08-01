@@ -28,7 +28,7 @@
 
 
 // DrawRect block typedef
-typedef void(^UIViewDrawRectBlock)(CGRect rect);
+typedef void(^UIViewDrawRectBlock)(UIView *self, CGRect rect);
 
 
 @interface UIView (UIView_DrawRectBlock)
