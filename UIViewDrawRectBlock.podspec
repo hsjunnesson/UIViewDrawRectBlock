@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/hsjunnesson/UIViewDrawRectBlock'
   s.author   = { 'Hans Sjunnesson' => 'hans.sjunnesson@gmail.com' }
   s.license  = { :type => 'MIT', :file => 'README.md' }
-  s.source   = { :git => 'https://github.com/mruegenberg/UIViewDrawRectBlock.git' }
+  s.source   = { :git => 'https://github.com/hsjunnesson/UIViewDrawRectBlock.git' }
                  
   s.description = 'Tired of subclassing UIView just to implement drawRect? ' \
                   'This is a category on UIView to create an instance with a ' \
