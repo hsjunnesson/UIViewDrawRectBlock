@@ -11,7 +11,7 @@ Something like this:
 
     - (void)viewDidLoad {
         [self.view addSubview:[UIView viewWithFrame:CGRectMake(20, 40, 60, 60)
-                                      drawRectBlock:^(CGRect rect) {
+                                      drawRectBlock:^(UIView *drawRectView, CGRect rect) {
                                           CGContextRef c = UIGraphicsGetCurrentContext();
                                           CGContextSetFillColorWithColor(c, [UIColor blueColor].CGColor);
                                           CGContextFillRect(c, rect);
@@ -23,7 +23,7 @@ Say you want to access a property on the viewcontroller, like that color, so you
 
     - (void)viewDidLoad {
         [self.view addSubview:[UIView viewWithFrame:CGRectMake(20, 40, 60, 60)
-                                      drawRectBlock:^(CGRect rect) {
+                                      drawRectBlock:^(UIView *drawRectView, CGRect rect) {
                                           CGContextRef c = UIGraphicsGetCurrentContext();
                                           CGContextSetFillColorWithColor(c, self.fillColor.CGColor);
                                           CGContextFillRect(c, rect);
@@ -37,7 +37,7 @@ If you're using iOS 5 and ARC, you can do something like this:
     - (void)viewDidLoad {
         __weak MyViewController *weakRef = self;
         [self.view addSubview:[UIView viewWithFrame:CGRectMake(20, 40, 60, 60)
-                                      drawRectBlock:^(CGRect rect) {
+                                      drawRectBlock:^(UIView *drawRectView, CGRect rect) {
                                           CGContextRef c = UIGraphicsGetCurrentContext();
                                           CGContextSetFillColorWithColor(c, weakRef.fillColor.CGColor);
                                           CGContextFillRect(c, rect);
